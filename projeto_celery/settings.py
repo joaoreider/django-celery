@@ -31,6 +31,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'inscricao',
+    'django_celery_results'
 
 ]
 
@@ -132,3 +133,10 @@ EMAIL_HOST_PASSWORD = SENHA
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 EMAIL_HOST = 'smtp.gmail.com'
+
+# CELERY
+CELERY_BROKER_URL = 'redis://127.0.0.1:6379/0'
+ACCEPT_CONTENT = ['json']
+CELERY_TASK_CONTENT = 'json'
+
+RESULT_BACKEND = 'django-db'

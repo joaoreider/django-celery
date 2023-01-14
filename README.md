@@ -1,7 +1,7 @@
 <h1 align="center"> Django-Celery </h1>
 
 <p style='text-align: justify;'> 
-Envio de email com django celery utilizando o conceito de programação distribuida para melhorar a experiência do usuário. As tarefas são colocadas em fila num broker que distribui essas tasks num work quando este puder processar.
+Envio de email com django celery utilizando o conceito de programação distribuida para melhorar a experiência do usuário. As tarefas são colocadas em fila num broker que distribui essas tasks num worker quando este puder processar.
 
 <br>
 
@@ -13,6 +13,7 @@ Envio de email com django celery utilizando o conceito de programação distribu
 
 
 - ``Celery``
+- ``Hash com Sha256``
 - ``Redis``
 - ``Framework Django``
 
